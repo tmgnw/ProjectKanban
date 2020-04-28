@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanApi", "KanbanApi\KanbanApi.csproj", "{A5D0C8A1-CFF7-49DD-9695-ABB608A57725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KanbanApi", "KanbanApi\KanbanApi.csproj", "{A5D0C8A1-CFF7-49DD-9695-ABB608A57725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanClient", "KanbanClient\KanbanClient.csproj", "{72B7A6BC-97E2-4AD9-9877-9CF58E16B680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KanbanClient", "KanbanClient\KanbanClient.csproj", "{72B7A6BC-97E2-4AD9-9877-9CF58E16B680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

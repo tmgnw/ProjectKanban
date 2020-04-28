@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
+    "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
+    "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "projectUniqueName": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
         "projectName": "KanbanClient",
-        "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
-        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\obj\\",
+        "projectPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "packagesPath": "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Syamsu Rijal Efendi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
