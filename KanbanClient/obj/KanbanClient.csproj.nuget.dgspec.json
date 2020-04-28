@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
+    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
+    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
         "projectName": "KanbanClient",
-        "projectPath": "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanClient\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
