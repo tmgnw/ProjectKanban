@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PLL2lNfxeSWIAqQiyAisenmueR/uHyZpNhn5r5POTMC5G4Zy46qM3CmKt+/ZKXDxeZWXZZ49cOfbDO6oAR7TtA==",
+  "dgSpecHash": "X5qPY2tpSSZDjRn6Rzi1FSYlquMw9OiJbtIA4GXqIopvBJeyvc+Q366dnRfKXUoCTeEcaNdnlt0x/3Ti1KYVUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thomas\\source\\repos\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+  "projectFilePath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
