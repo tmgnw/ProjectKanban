@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using KanbanApi.MyContext;
+using KanbanApi.Context;
 using KanbanApi.Repository.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,12 +30,15 @@ namespace KanbanApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<myContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("MyConnection")));
+            services.AddDbContext<MyContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MyNetCoreConnection")));
 
             services.AddScoped<BoardRepository>();
             services.AddScoped<CardRepository>();
             services.AddScoped<StatusListRepository>();
+            services.AddScoped<UserRepository>();
+            services.AddScoped<TeamRepository>();
+            services.AddScoped<RoleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

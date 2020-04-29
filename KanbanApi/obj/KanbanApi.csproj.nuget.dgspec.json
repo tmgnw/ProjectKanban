@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {}
+    "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
+    "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+        "projectUniqueName": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
         "projectName": "KanbanApi",
-        "projectPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+        "projectPath": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
         "packagesPath": "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\obj\\",
+        "outputPath": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Syamsu Rijal Efendi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -48,6 +52,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

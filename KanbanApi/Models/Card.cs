@@ -17,10 +17,8 @@ namespace KanbanApi.Models
         public string Description { get; set; }
         public DateTimeOffset StartDate { get; set; }
         public DateTimeOffset FinishDate { get; set; }
-        public bool IsDelete { get; set; }
-        public DateTimeOffset CreateDate { get; set; }
-        public Nullable<DateTimeOffset> UpdateDate { get; set; }
-        public Nullable<DateTimeOffset> DeleteDate { get; set; }
+
+        public IList<BoardCard> BoardCards { get; set; }
 
         [ForeignKey("StatusList")]
         public int StatusList_Id { get; set; }

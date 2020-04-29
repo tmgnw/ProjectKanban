@@ -1,15 +1,16 @@
 ﻿using KanbanApi.Models;
-using KanbanApi.MyContext;
+using KanbanApi.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace KanbanApi.Repository.Data
 {
-    public class BoardRepository : GeneralRepository<Board, myContext>
+    public class BoardRepository : GeneralRepository<Board, MyContext>
     {
-        public BoardRepository(myContext myContexts) : base(myContexts)
+        public BoardRepository(MyContext myContext) : base(myContext)
         {
         }
     }

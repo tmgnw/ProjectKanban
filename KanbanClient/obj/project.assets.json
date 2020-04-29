@@ -11885,11 +11885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+      "projectUniqueName": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
       "projectName": "KanbanClient",
-      "projectPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+      "projectPath": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
       "packagesPath": "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\obj\\",
+      "outputPath": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Syamsu Rijal Efendi\\AppData\\Roaming\\NuGet\\NuGet.Config",

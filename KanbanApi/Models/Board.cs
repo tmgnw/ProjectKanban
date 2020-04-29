@@ -14,11 +14,12 @@ namespace KanbanApi.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<StatusList> StatusLists { get; set; }
-        public bool IsDelete { get; set; }
-        public DateTimeOffset CreateDate { get; set; }
-        public Nullable<DateTimeOffset> UpdateDate { get; set; }
-        public Nullable<DateTimeOffset> DeleteDate { get; set; }
+
+        public IList<BoardCard> BoardCards { get; set; }
+
+        [ForeignKey("Team")]
+        public int Team_Id { get; set; }
+        public Team Team { get; set; }
 
     }
 }

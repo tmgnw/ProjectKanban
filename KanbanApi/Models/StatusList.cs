@@ -14,14 +14,6 @@ namespace KanbanApi.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        [ForeignKey("Board")]
-        public int Board_Id { get; set; }
-        public Board Board { get; set; }
         public virtual ICollection<Card> Cards { get; set; }
-
-        public bool IsDelete { get; set; }
-        public DateTimeOffset CreateDate { get; set; }
-        public Nullable<DateTimeOffset> UpdateDate { get; set; }
-        public Nullable<DateTimeOffset> DeleteDate { get; set; }
     }
 }
