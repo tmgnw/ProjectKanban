@@ -8,8 +8,6 @@ C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Kan
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfoInputs.cache
@@ -34,3 +32,5 @@ C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Kan
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
+C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
+C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
