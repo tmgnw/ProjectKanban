@@ -18,8 +18,6 @@ namespace KanbanApi.Models
         public DateTimeOffset StartDate { get; set; }
         public DateTimeOffset FinishDate { get; set; }
 
-        public IList<BoardCard> BoardCards { get; set; }
-
         [ForeignKey("StatusList")]
         public int StatusList_Id { get; set; }
         public StatusList StatusList { get; set; }

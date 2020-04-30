@@ -15,5 +15,11 @@ namespace KanbanApi.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public virtual ICollection<Card> Cards { get; set; }
+
+        [ForeignKey("Board")]
+        public int Board_Id { get; set; }
+        public Board Board { get; set; }
+        
+
     }
 }

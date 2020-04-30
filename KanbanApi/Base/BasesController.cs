@@ -48,7 +48,7 @@ namespace KanbanApi.Base
             await _repository.Post(entity);
             return CreatedAtAction("Get", new { id = entity.Id }, entity);
         }
-
+        
         // API PUT
         [HttpPut("{id}")]
         public async Task<ActionResult<TEntity>> Put(int id, TEntity entity)

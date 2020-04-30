@@ -15,7 +15,7 @@ namespace KanbanApi.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public IList<BoardCard> BoardCards { get; set; }
+        public virtual IList<StatusList> StatusLists { get; set; }
 
         [ForeignKey("Team")]
         public int Team_Id { get; set; }

@@ -12,10 +12,8 @@ namespace KanbanApi.Context
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
         public DbSet<Board> Boards { get; set; }
-        public DbSet<Card> Cards { get; set; }
-        public DbSet<BoardCard> BoardCards { get; set; }
-
         public DbSet<StatusList> StatusList { get; set; }
+        public DbSet<Card> Cards { get; set; }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
@@ -31,8 +29,6 @@ namespace KanbanApi.Context
         {
             base.OnModelCreating(builder);
             // Define composite key.
-            builder.Entity<BoardCard>()
-                .HasKey(bc => new { bc.Board_Id, bc.Card_Id});
             builder.Entity<UserRole>()
             .HasKey(ur => new { ur.User_Id, ur.Role_Id });
             builder.Entity<UserTeam>()

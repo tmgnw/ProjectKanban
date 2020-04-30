@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using KanbanApi.Base;
 using KanbanApi.Models;
 using KanbanApi.Repository.Data;
+using KanbanApi.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,5 +21,15 @@ namespace KanbanApi.Controllers
         {
             this._repository = repository;
         }
+
+        [HttpGet]
+        [Route("List")]
+        public async Task<IEnumerable<BoardVM>> GetAll()
+        {
+            return await _repository.GetAllBoard();
+        }
+
+
+
     }
 }

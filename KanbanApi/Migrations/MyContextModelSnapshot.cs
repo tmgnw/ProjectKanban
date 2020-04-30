@@ -36,19 +36,6 @@ namespace KanbanApi.Migrations
                     b.ToTable("TB_M_Board");
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.BoardCard", b =>
-                {
-                    b.Property<int>("Board_Id");
-
-                    b.Property<int>("Card_Id");
-
-                    b.HasKey("Board_Id", "Card_Id");
-
-                    b.HasIndex("Card_Id");
-
-                    b.ToTable("TB_T_Board_Card");
-                });
-
             modelBuilder.Entity("KanbanApi.Models.Card", b =>
                 {
                     b.Property<int>("Id")
@@ -91,9 +78,13 @@ namespace KanbanApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Board_Id");
+
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Board_Id");
 
                     b.ToTable("TB_T_Status_List");
                 });
@@ -164,24 +155,19 @@ namespace KanbanApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.BoardCard", b =>
-                {
-                    b.HasOne("KanbanApi.Models.Board", "Board")
-                        .WithMany("BoardCards")
-                        .HasForeignKey("Board_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("KanbanApi.Models.Card", "Card")
-                        .WithMany("BoardCards")
-                        .HasForeignKey("Card_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("KanbanApi.Models.Card", b =>
                 {
                     b.HasOne("KanbanApi.Models.StatusList", "StatusList")
                         .WithMany("Cards")
                         .HasForeignKey("StatusList_Id")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("KanbanApi.Models.StatusList", b =>
+                {
+                    b.HasOne("KanbanApi.Models.Board", "Board")
+                        .WithMany("StatusLists")
+                        .HasForeignKey("Board_Id")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

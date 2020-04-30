@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PX24syjvG4ajMQeomMJ+E6bf6vQ2PCQm5VX7dbti/6RKu/aauHo7gsbjmh+Zf462LyoUS1J2ZOBng0WQknPbQg==",
+  "dgSpecHash": "7349fL5Ku3SS3J/I8U0nstKQZkVaCrVMdsuqGoDh9QXl0zVmkxiF8glra5UwvXr6neuucbtGANAm9cZZtRlJ1g==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Source-Code\\malam\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+  "projectFilePath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
