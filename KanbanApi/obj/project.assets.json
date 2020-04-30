@@ -12622,19 +12622,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thomas\\.nuget\\packages\\": {}
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+      "projectUniqueName": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
       "projectName": "KanbanApi",
-      "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
-      "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\obj\\",
+      "projectPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+      "packagesPath": "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Syamsu Rijal Efendi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
