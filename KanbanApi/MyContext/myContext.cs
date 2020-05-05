@@ -11,14 +11,36 @@ namespace KanbanApi.MyContext
     {
         public myContext(DbContextOptions<myContext> options) : base(options) { }
 
-        public DbSet<Board> Board { get; set; }
-        public DbSet<StatusList> StatusList { get; set; }
-        public DbSet<Card> Card { get; set; }
+        public DbSet<Board> Boards { get; set; }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<StatusList> StatusLists { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserBoard> UserBoards { get; set; }
 
-        public DbSet<User> User { get; set; }
-        public DbSet<Role> Role { get; set; }
-        public DbSet<Team> Team { get; set; }
+        //public DbSet<Role> Roles { get; set; }
+        //public DbSet<UserTeam> UserRoles { get; set; }
+        //public DbSet<UserTeam> UserTeams { get; set; }
+        //public DbSet<Team> Teams { get; set; }
 
-        public DbSet<UserTeam> UserTeam { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            // Define composite key.
+            builder.Entity<UserBoard>()
+            .HasKey(ub => new { ub.User_Id, ub.Board_Id });
+
+            builder.Entity<Board>()
+            .HasMany(e => e.UserBoards)
+            .WithOne(e => e.Board).IsRequired()
+            .HasForeignKey(e => e.Board_Id)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<User>()
+            .HasMany(e => e.UserBoards)
+            .WithOne(e => e.User).IsRequired()
+            .HasForeignKey(e => e.User_Id)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        }
     }
 }

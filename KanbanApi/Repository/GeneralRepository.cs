@@ -24,7 +24,7 @@ namespace KanbanApi.Repository
         //REPO GET ALL
         public async Task<List<TEntity>> Get()
         {
-            return await _myContext.Set<TEntity>().Where(TEntity => TEntity.IsDelete == false).ToListAsync();
+            return await _myContext.Set<TEntity>().ToListAsync();
         }
 
         //REPO GET BY ID
@@ -37,8 +37,8 @@ namespace KanbanApi.Repository
         //REPO POST
         public async Task<TEntity> Post(TEntity entity)
         {
-            entity.CreateDate = DateTimeOffset.Now;
-            entity.IsDelete = false;
+            //entity.CreateDate = DateTimeOffset.Now;
+            //entity.IsDelete = false;
             await _myContext.Set<TEntity>().AddAsync(entity);
             await _myContext.SaveChangesAsync();
             return entity;
@@ -60,8 +60,8 @@ namespace KanbanApi.Repository
             {
                 return entity;
             }
-            entity.DeleteDate = DateTimeOffset.Now;
-            entity.IsDelete = true;
+            //entity.DeleteDate = DateTimeOffset.Now;
+            //entity.IsDelete = true;
             _myContext.Entry(entity).State = EntityState.Modified;
             await _myContext.SaveChangesAsync();
             return entity;

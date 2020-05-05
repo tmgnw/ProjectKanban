@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using KanbanApi.Base;
 using KanbanApi.Models;
 using KanbanApi.Repository.Data;
+using KanbanApi.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,41 +13,47 @@ namespace KanbanApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StatusListController : BasesController<StatusList, StatusListRepository>
+    public class StatusListController : ControllerBase
     {
         private readonly StatusListRepository _repository;
 
-        public StatusListController(StatusListRepository repository) : base(repository)
+        public StatusListController(StatusListRepository repository) 
         {
             this._repository = repository;
 
         }
 
-        // API PUT STATUS LIST
+        [HttpGet]
+        public async Task<IEnumerable<StatusListVM>> GetAll()
+        {
+            return await _repository.GetAllStatusList();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IEnumerable<StatusListVM>> GetById(int id)
+        {
+            return await _repository.GetByIdStatusList(id);
+        }
+
+        [HttpPost]
+        public IActionResult Insert(StatusListVM statusListVM)
+        {
+            _repository.Insert(statusListVM);
+            return Ok("Insert Succesfully");
+        }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<StatusList>> Put(int id, StatusList entity)
+        public IActionResult Put(int id, StatusListVM statusListVM)
         {
-            var update = await _repository.Get(id);
+            _repository.Update(id, statusListVM);
+            return Ok("Updated Succesfully");
+        }
 
-            if (update == null)
-            {
-                return BadRequest();
-            }
-
-            if (entity.Name != null)
-            {
-                update.Name = entity.Name;
-            }
-
-            if (entity.Board_Id != null)
-            {
-                update.Board_Id = entity.Board_Id;
-            }
-
-            update.UpdateDate = DateTimeOffset.Now;
-            await _repository.Put(update);
-            return Ok("Update Successfully");
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            _repository.Remove(id);
+            return Ok("Deleted Succesfully");
         }
     }
 }

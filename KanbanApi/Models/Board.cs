@@ -11,14 +11,22 @@ namespace KanbanApi.Models
     [Table("TB_M_Board")]
     public class Board : IEntity
     {
+        public Board()
+        {
+            this.StatusLists = new HashSet<StatusList>();
+            this.UserBoards = new HashSet<UserBoard>();
+        }
+
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<StatusList> StatusLists { get; set; }
-        public bool IsDelete { get; set; }
-        public DateTimeOffset CreateDate { get; set; }
-        public Nullable<DateTimeOffset> UpdateDate { get; set; }
-        public Nullable<DateTimeOffset> DeleteDate { get; set; }
 
+        public virtual ICollection<StatusList> StatusLists { get; set; }
+        public virtual ICollection<UserBoard> UserBoards { get; set; }
+
+        [Required]
+        [ForeignKey("User")]
+        public int User_Id { get; set; }
+        public virtual User User { get; set; }
     }
 }

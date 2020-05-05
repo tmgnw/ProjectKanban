@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layouts/Layout.cshtml";
+}
+
+@*<h2>Index</h2>*@
+
+<p>
+    <button id="Add" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Create Board</button>
+</p>
+
+<div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Board</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group" hidden>
+                                <label for="Id">Id:</label>
+                                <input type="text" class="form-control" id="Id" name="Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Title :</label>
+                                <input type="text" class="form-control" id="Name" placeholder="Enter Title" name="Name">
+                            </div>
+                            @*<div class="form-group">
+                                    <label for="DepartmentName">Department Name :</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="DepartmentOption" name="DepartmentOption"></select>
+                                    </div>
+                                </div>*@
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" id="Save" onclick="Save();">Save</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="Update" onclick="Edit();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Board</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group" hidden>
+                                <label for="Id">Id:</label>
+                                <input type="text" class="form-control" id="Id" name="Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Title :</label>
+                                <input type="text" class="form-control" id="Name" placeholder="Enter Title" name="Name">
+                            </div>
+                            @*<div class="form-group">
+                                    <label for="DepartmentName">Department Name :</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="DepartmentOption" name="DepartmentOption"></select>
+                                    </div>
+                                </div>*@
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" id="Save" onclick="Save();">Save</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal" id="Update" onclick="Edit();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive m-t-40" id="BodyBoard">
+    @*<table id="Board" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>*@
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/_Board.js"></script>
+}
