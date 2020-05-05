@@ -36,6 +36,10 @@ namespace KanbanApi
             services.AddScoped<BoardRepository>();
             services.AddScoped<CardRepository>();
             services.AddScoped<StatusListRepository>();
+            services.AddScoped<UserRepository>();
+            services.AddScoped<UserBoardRepository>();
+            //services.AddScoped<TeamRepository>();
+            //services.AddScoped<RoleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using KanbanApi.Base;
 using KanbanApi.Models;
 using KanbanApi.Repository.Data;
+using KanbanApi.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,57 +13,47 @@ namespace KanbanApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CardController : BasesController<Card, CardRepository>
+    public class CardController : ControllerBase
     {
         private readonly CardRepository _repository;
 
-        public CardController(CardRepository repository) : base(repository)
+        public CardController(CardRepository repository) 
         {
             this._repository = repository;
 
         }
 
+        [HttpGet]
+        public async Task<IEnumerable<CardVM>> GetAll()
+        {
+            return await _repository.GetAllCard();
+        }
 
-        // API PUT CARD
+        [HttpGet("{id}")]
+        public async Task<IEnumerable<CardVM>> GetById(int id)
+        {
+            return await _repository.GetByIdCard(id);
+        }
+
+        [HttpPost]
+        public IActionResult Insert(CardVM cardVM)
+        {
+            _repository.Insert(cardVM);
+            return Ok("Insert Succesfully");
+        }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<Card>> Put(int id, Card entity)
+        public IActionResult Put(int id, CardVM cardVM)
         {
-            var update = await _repository.Get(id);
+            _repository.Update(id, cardVM);
+            return Ok("Updated Succesfully");
+        }
 
-            if (update == null)
-            {
-                return BadRequest();
-            }
-
-            if (entity.Name != null)
-            {
-                update.Name = entity.Name;
-            }
-
-            if (entity.Description != null)
-            {
-                update.Description = entity.Description;
-            }
-
-            if (entity.StartDate != default(DateTime))
-            {
-                update.StartDate = entity.StartDate;
-            }
-
-            if (entity.FinishDate != default(DateTime))
-            {
-                update.FinishDate = entity.FinishDate;
-            }
-
-            if (entity.StatusList_Id != null)
-            {
-                update.StatusList_Id = entity.StatusList_Id;
-            }
-
-            update.UpdateDate = DateTimeOffset.Now;
-            await _repository.Put(update);
-            return Ok("Update Successfully");
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            _repository.Remove(id);
+            return Ok("Deleted Succesfully");
         }
     }
 }
