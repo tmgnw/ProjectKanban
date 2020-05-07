@@ -1,21 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "CDvIJ1phIAE4ILQ0f/G+KHmFLu/AiFSzaWoki+08695/FQz+0KtfHB5urDsyFaLs/0b/LJVTltOtmGmHRopaVg==",
+  "dgSpecHash": "2Fcx+Gj4L5w4z6BQr0yAqZTJpI1iQ9HC8zlqqyQkpdQTUvbpYTU1qlQvGwt5SmNQnnXp0iIXzD598nf/lD08Tg==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Source-Code\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\bcrypt-core\\2.0.0\\bcrypt-core.2.0.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.app\\2.1.1\\microsoft.aspnetcore.app.2.1.1.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.1.1\\microsoft.aspnetcore.authentication.2.1.1.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.1.2\\microsoft.aspnetcore.authentication.2.1.2.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.1.1\\microsoft.aspnetcore.authentication.cookies.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\2.1.1\\microsoft.aspnetcore.authentication.facebook.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\2.1.1\\microsoft.aspnetcore.authentication.google.2.1.1.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\2.1.1\\microsoft.aspnetcore.authentication.jwtbearer.2.1.1.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\2.1.2\\microsoft.aspnetcore.authentication.jwtbearer.2.1.2.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\2.1.1\\microsoft.aspnetcore.authentication.microsoftaccount.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.oauth\\2.1.1\\microsoft.aspnetcore.authentication.oauth.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\2.1.1\\microsoft.aspnetcore.authentication.openidconnect.2.1.1.nupkg.sha512",
@@ -157,11 +160,12 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.1.1\\microsoft.extensions.options.configurationextensions.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.1\\microsoft.extensions.primitives.2.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.extensions.webencoders\\2.1.1\\microsoft.extensions.webencoders.2.1.1.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.logging\\5.2.0\\microsoft.identitymodel.logging.5.2.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.3.0\\microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.logging\\5.3.0\\microsoft.identitymodel.logging.5.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.2.0\\microsoft.identitymodel.protocols.5.2.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.2.0\\microsoft.identitymodel.protocols.openidconnect.5.2.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.protocols.wsfederation\\5.2.0\\microsoft.identitymodel.protocols.wsfederation.5.2.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.2.0\\microsoft.identitymodel.tokens.5.2.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.3.0\\microsoft.identitymodel.tokens.5.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.tokens.saml\\5.2.0\\microsoft.identitymodel.tokens.saml.5.2.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.identitymodel.xml\\5.2.0\\microsoft.identitymodel.xml.5.2.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.net.http.headers\\2.1.1\\microsoft.net.http.headers.2.1.1.nupkg.sha512",
@@ -171,6 +175,10 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.owin\\4.1.0\\microsoft.owin.4.1.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.owin.security\\4.1.0\\microsoft.owin.security.4.1.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.owin.security.jwt\\4.1.0\\microsoft.owin.security.jwt.4.1.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.owin.security.oauth\\4.1.0\\microsoft.owin.security.oauth.4.1.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\2.1.10\\microsoft.visualstudio.web.codegeneration.2.1.10.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\2.1.10\\microsoft.visualstudio.web.codegeneration.contracts.2.1.10.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\2.1.10\\microsoft.visualstudio.web.codegeneration.core.2.1.10.nupkg.sha512",
@@ -184,24 +192,25 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\owin\\1.0.0\\owin.1.0.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.io.compression\\4.3.0\\runtime.native.system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.net.http\\4.3.0\\runtime.native.system.net.http.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.security.cryptography.apple\\4.3.0\\runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple\\4.3.0\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.security.cryptography.apple\\4.3.1\\runtime.native.system.security.cryptography.apple.4.3.1.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple\\4.3.1\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.1.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -232,7 +241,7 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\system.globalization.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.2.0\\system.identitymodel.tokens.jwt.5.2.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.3.0\\system.identitymodel.tokens.jwt.5.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.interactive.async\\3.1.1\\system.interactive.async.3.1.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
@@ -270,7 +279,7 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.runtime.serialization.xml\\4.3.0\\system.runtime.serialization.xml.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.claims\\4.3.0\\system.security.claims.4.3.0.nupkg.sha512",
-    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+    "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.1\\system.security.cryptography.algorithms.4.3.1.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.cryptography.csp\\4.3.0\\system.security.cryptography.csp.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
@@ -301,5 +310,66 @@
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Syamsu Rijal Efendi\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin.Security 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin.Security",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin.Security.Jwt 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin.Security.Jwt",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Owin.Security.OAuth 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Owin.Security.OAuth",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Owin",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

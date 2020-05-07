@@ -19,23 +19,6 @@ namespace KanbanApi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("KanbanApi.Models.Board", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name");
-
-                    b.Property<int>("Team_Id");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Team_Id");
-
-                    b.ToTable("TB_M_Board");
-                });
-
             modelBuilder.Entity("KanbanApi.Models.Card", b =>
                 {
                     b.Property<int>("Id")
@@ -44,64 +27,59 @@ namespace KanbanApi.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<DateTimeOffset>("FinishDate");
-
                     b.Property<string>("Name");
 
-                    b.Property<DateTimeOffset>("StartDate");
+                    b.Property<string>("Status");
 
-                    b.Property<int>("StatusList_Id");
+                    b.Property<int>("TaskList_Id");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StatusList_Id");
+                    b.HasIndex("TaskList_Id");
 
                     b.ToTable("TB_T_Card");
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.Role", b =>
+            modelBuilder.Entity("KanbanApi.Models.Project", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TB_M_Role");
-                });
-
-            modelBuilder.Entity("KanbanApi.Models.StatusList", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Board_Id");
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Board_Id");
-
-                    b.ToTable("TB_T_Status_List");
-                });
-
-            modelBuilder.Entity("KanbanApi.Models.Team", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<DateTimeOffset>("CreateDate");
 
                     b.Property<string>("Description");
 
+                    b.Property<int>("Manager_Id");
+
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TB_M_Team");
+                    b.HasIndex("Manager_Id");
+
+                    b.ToTable("TB_M_Project");
+                });
+
+            modelBuilder.Entity("KanbanApi.Models.TaskList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreateDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("Project_Id");
+
+                    b.Property<string>("Status");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Project_Id");
+
+                    b.ToTable("TB_T_Task_List");
                 });
 
             modelBuilder.Entity("KanbanApi.Models.User", b =>
@@ -121,79 +99,27 @@ namespace KanbanApi.Migrations
                     b.ToTable("TB_M_User");
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.UserRole", b =>
-                {
-                    b.Property<int>("User_Id");
-
-                    b.Property<int>("Role_Id");
-
-                    b.HasKey("User_Id", "Role_Id");
-
-                    b.HasIndex("Role_Id");
-
-                    b.ToTable("TB_T_User_Role");
-                });
-
-            modelBuilder.Entity("KanbanApi.Models.UserTeam", b =>
-                {
-                    b.Property<int>("User_Id");
-
-                    b.Property<int>("Team_Id");
-
-                    b.HasKey("User_Id", "Team_Id");
-
-                    b.HasIndex("Team_Id");
-
-                    b.ToTable("TB_T_User_Team");
-                });
-
-            modelBuilder.Entity("KanbanApi.Models.Board", b =>
-                {
-                    b.HasOne("KanbanApi.Models.Team", "Team")
-                        .WithMany("Boards")
-                        .HasForeignKey("Team_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("KanbanApi.Models.Card", b =>
                 {
-                    b.HasOne("KanbanApi.Models.StatusList", "StatusList")
+                    b.HasOne("KanbanApi.Models.TaskList", "TaskList")
                         .WithMany("Cards")
-                        .HasForeignKey("StatusList_Id")
+                        .HasForeignKey("TaskList_Id")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.StatusList", b =>
+            modelBuilder.Entity("KanbanApi.Models.Project", b =>
                 {
-                    b.HasOne("KanbanApi.Models.Board", "Board")
-                        .WithMany("StatusLists")
-                        .HasForeignKey("Board_Id")
+                    b.HasOne("KanbanApi.Models.User", "Manager")
+                        .WithMany("Projects")
+                        .HasForeignKey("Manager_Id")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("KanbanApi.Models.UserRole", b =>
+            modelBuilder.Entity("KanbanApi.Models.TaskList", b =>
                 {
-                    b.HasOne("KanbanApi.Models.Role", "Role")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("Role_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("KanbanApi.Models.User", "User")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("User_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("KanbanApi.Models.UserTeam", b =>
-                {
-                    b.HasOne("KanbanApi.Models.Team", "Team")
-                        .WithMany("UserTeams")
-                        .HasForeignKey("Team_Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("KanbanApi.Models.User", "User")
-                        .WithMany("UserTeams")
-                        .HasForeignKey("User_Id")
+                    b.HasOne("KanbanApi.Models.Project", "Project")
+                        .WithMany("TaskLists")
+                        .HasForeignKey("Project_Id")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

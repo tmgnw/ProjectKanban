@@ -1,4 +1,5 @@
 ﻿using KanbanApi.Base;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,13 +12,23 @@ namespace KanbanApi.Models
     [Table("TB_M_User")]
     public class User : IEntity
     {
+        public User()
+        {
+            this.Projects = new List<Project>();
+        }
+
         [Key]
         public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public IList<UserRole> UserRoles { get; set; }
-        public IList<UserTeam> UserTeams { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
+    }
+
+    public class UserJson
+    {
+        [JsonProperty("data")]
+        public IList<User> data { get; set; }
     }
 }

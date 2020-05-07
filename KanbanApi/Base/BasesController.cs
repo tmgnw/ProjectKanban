@@ -21,16 +21,16 @@ namespace KanbanApi.Base
             this._repository = repository;
         }
 
-        // API GET 
+        // API GET ALL
         [HttpGet]
         public async Task<ActionResult<TEntity>> Get()
         {
             var get = await _repository.Get();
             return Ok(new { data = get });
         }
-
+        
         // API GET BY ID
-        [HttpGet("{id}")]
+        [HttpGet ("{id}")]
         public async Task<ActionResult<IEntity>> Get(int id)
         {
             var get = await _repository.Get(id);
@@ -40,6 +40,7 @@ namespace KanbanApi.Base
             }
             return Ok(get);
         }
+        
 
         // API POST
         [HttpPost]
@@ -48,15 +49,15 @@ namespace KanbanApi.Base
             await _repository.Post(entity);
             return CreatedAtAction("Get", new { id = entity.Id }, entity);
         }
-        
+
         // API PUT
-        [HttpPut("{id}")]
+       [HttpPut("{id}")]
         public async Task<ActionResult<TEntity>> Put(int id, TEntity entity)
         {
             entity.Id = id;
             await _repository.Put(entity);
-            return Ok("Update Succesfull");
-        }
+            return Ok("Update Succesfullly");
+        } 
 
         // API DELETE
         [HttpDelete("{id}")]

@@ -69,4 +69,22 @@ D:\Documents\Source-Code\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanA
 D:\Documents\Source-Code\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.dll
 D:\Documents\Source-Code\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.pdb
 D:\Documents\Source-Code\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.genruntimeconfig.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\KanbanApi.deps.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\KanbanApi.runtimeconfig.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\KanbanApi.runtimeconfig.dev.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\KanbanApi.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\bin\Debug\netcoreapp2.1\KanbanApi.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.csprojAssemblyReference.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.csproj.CoreCompileInputs.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.RazorAssemblyInfo.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.RazorAssemblyInfo.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.AssemblyInfoInputs.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.AssemblyInfo.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.RazorTargetAssemblyInfo.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.genruntimeconfig.cache
 D:\Documents\Source-Code\ProjectKanban\KanbanApi\obj\Debug\netcoreapp2.1\KanbanApi.csprojAssemblyReference.cache

@@ -1,0 +1,210 @@
+﻿
+@{
+    ViewData["Title"] = "Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Mini AdminPro/assets/images/favicon.png">
+    <title>Dashboard</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Mini AdminPro/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/Mini AdminPro/main/css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="~/Mini AdminPro/main/css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="fix-header card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <img src="~/Mini AdminPro/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="~/Mini AdminPro/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <span>
+                            <!-- dark Logo text -->
+                            <img src="~/Mini AdminPro/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="~/Mini AdminPro/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
+
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="~/Mini AdminPro/assets/images/users/6.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="~/Mini AdminPro/assets/images/users/6.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>Kanban Project</h4>
+                                                <p class="text-muted">tum@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="@Url.Action("Logout","Auth")"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-us"></i></a>
+                            <div class="dropdown-menu  dropdown-menu-right animated bounceInDown"> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a> </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+                <div class="user-profile">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="~/Mini AdminPro/assets/images/users/6.jpg" alt="user" /> </div>
+                    <!-- User profile text-->
+                    <div class="profile-text">
+                        <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Project Kanban<span class="caret"></span></a>
+                        <div class="dropdown-menu animated flipInY">
+                            <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                            <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                            <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div> <a href="@Url.Action("Logout","Auth")" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <nav class="sidebar-nav" id="hidenav">
+                    <ul id="sidebarnav">
+                        @*@Html.Partial("_LoginPartial")*@
+                        <li class="nav-small-cap">DASHBOARD</li>
+
+                        @*<li>@Html.ActionLink("Department", "Index", "Department")</li>
+                        <li>@Html.ActionLink("Employee", "Index", "Employee")</li>*@
+
+                        @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+
+                        @*@if (User.IsInRole("Employee"))
+                            {
+
+                                <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
+                            }
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li>@Html.ActionLink("TodoList", "Index", "TodoLists")</li>
+                                <li>@Html.ActionLink("Role", "Index", "Role")</li>
+                                <li>@Html.ActionLink("Supplier", "Index", "Supplier")</li>
+                                <li>@Html.ActionLink("Register", "Register2", "User", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                            }*@
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-footer">
+                @*<form class="sidebar-footer" action="@Url.Action("Logout","Account")">
+                        <button class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></button>
+                    </form>*@
+                <a></a>
+                <a href="@Url.Action("Logout","Auth")" title="Logout"><i class="mdi mdi-power"></i></a>
+                <a></a>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive m-t-40">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer"> © 2017 Monster Admin by wrappixel.com </footer>
+        </div>
+    </div>
+
+    <script src="~/Mini AdminPro/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="~/Mini AdminPro/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="~/Mini AdminPro/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="~/Mini AdminPro/main/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="~/Mini AdminPro/main/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="~/Mini AdminPro/main/js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="~/Mini AdminPro/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="~/Mini AdminPro/main/js/custom.min.js"></script>
+    <!-- This is data table -->
+    <script src="~/Mini AdminPro/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>*@
+
+    <script src="~/Mini AdminPro/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="~/Mini AdminPro/assets/plugins/moment/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.9/dist/sweetalert2.all.min.js"></script>
+
+    <!--Morris JavaScript -->
+    <script src="~/Mini AdminPro/assets/plugins/raphael/raphael-min.js"></script>
+    <script src="~/Mini AdminPro/assets/plugins/morrisjs/morris.js"></script>
+
+    <!-- end - This is for export functionality only -->
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

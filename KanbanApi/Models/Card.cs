@@ -13,13 +13,14 @@ namespace KanbanApi.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public DateTimeOffset StartDate { get; set; }
-        public DateTimeOffset FinishDate { get; set; }
 
-        [ForeignKey("StatusList")]
-        public int StatusList_Id { get; set; }
-        public StatusList StatusList { get; set; }
+        [ForeignKey("TaskList")]
+        public int TaskList_Id { get; set; }
+        public virtual TaskList TaskList { get; set; }
+
+        public string Name { get; set; }
+        public string Status { get; set; }
+        public string Description { get; set; }
+
     }
 }
