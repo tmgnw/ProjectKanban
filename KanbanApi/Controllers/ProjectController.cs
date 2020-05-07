@@ -42,22 +42,29 @@ namespace KanbanApi.Controllers
             return Ok("Insert Succesfully");
         }
 
-     /*   // API DELETE WITH DAPPER
-        [HttpDelete("Remove/{id}")]
-        public IActionResult Delete(int id)
+        [HttpGet]
+        [Route("ChartInfo")]
+        public async Task<IEnumerable<ChartVM>> Chart()
         {
-            _repository.Remove(id);
-            return Ok("Deleted Succesfully");
+            return await _repository.GetChart();
         }
 
-        // API PUT WITH DAPPER
-        [HttpPut("Update/{id}")]
-        public IActionResult Update(int id, ProjectVM projectVM)
-        {
-            _repository.Update(id, projectVM);
-            return Ok("Updated Succesfully");
-        }
-        */
+        /*   // API DELETE WITH DAPPER
+           [HttpDelete("Remove/{id}")]
+           public IActionResult Delete(int id)
+           {
+               _repository.Remove(id);
+               return Ok("Deleted Succesfully");
+           }
+
+           // API PUT WITH DAPPER
+           [HttpPut("Update/{id}")]
+           public IActionResult Update(int id, ProjectVM projectVM)
+           {
+               _repository.Update(id, projectVM);
+               return Ok("Updated Succesfully");
+           }
+           */
 
     }
 }

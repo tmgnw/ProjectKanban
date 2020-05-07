@@ -22,12 +22,13 @@ namespace KanbanApi.Repository.Data
             _configuration = configuration;
         }
 
-        public async Task<IEnumerable<CardVM>> GetAllCard()
+        public async Task<IEnumerable<CardVM>> GetAllCard(string Id)
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
+                parameters.Add("@Id", Id);
                 var procName = "SP_Retrieve_TB_T_Card";
-                var data = await connection.QueryAsync<CardVM>(procName, commandType: CommandType.StoredProcedure);
+                var data = await connection.QueryAsync<CardVM>(procName, parameters,commandType: CommandType.StoredProcedure);
                 return data;
             }
         }
@@ -50,10 +51,8 @@ namespace KanbanApi.Repository.Data
                 var procName = "SP_Insert_TB_T_Card";
                 parameters.Add("@Name", cardVM.Name);
                 parameters.Add("@Description", cardVM.Description);
-                parameters.Add("@StartDate", cardVM.StartDate);
-                parameters.Add("@FinishDate", cardVM.FinishDate);
-                parameters.Add("@Position", cardVM.Position);
-                parameters.Add("@StatusList_Id", cardVM.StatusList_Id);
+                parameters.Add("@Status", cardVM.Status);
+                parameters.Add("@TaskList_Id", cardVM.TaskList_Id);
                 var data = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return data;
             }
@@ -67,10 +66,8 @@ namespace KanbanApi.Repository.Data
                 parameters.Add("@Id", id);
                 parameters.Add("@Name", cardVM.Name);
                 parameters.Add("@Description", cardVM.Description);
-                parameters.Add("@StartDate", cardVM.StartDate);
-                parameters.Add("@FinishDate", cardVM.FinishDate);
-                parameters.Add("@Position", cardVM.Position);
-                parameters.Add("@StatusList_Id", cardVM.StatusList_Id);
+                parameters.Add("@Status", cardVM.Status);
+                parameters.Add("@TaskList_Id", cardVM.TaskList_Id);
                 var data = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return data;
             }
@@ -83,6 +80,16 @@ namespace KanbanApi.Repository.Data
                 var procName = "SP_Delete_TB_T_Card";
                 parameters.Add("@Id", Id);
                 var data = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
+                return data;
+            }
+        }
+
+        public async Task<IEnumerable<ChartVM>> GetChart()
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
+            {
+                var spName = "SP_GetChart";
+                var data = await connection.QueryAsync<ChartVM>(spName, commandType: CommandType.StoredProcedure);
                 return data;
             }
         }

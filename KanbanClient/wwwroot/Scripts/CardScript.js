@@ -1,12 +1,12 @@
 ﻿var dateNow = new Date();
-var User = [];
+var TaskList = [];
 $(document).ready(function () {
     //load digram
-    Donut();
-    Bar();
-    $('#Project').dataTable({
+    //Donut();
+    //Bar();
+    $('#Card').dataTable({
         "ajax": {
-            url: "/Project/LoadProject",
+            url: "/Card/LoadCard",
             type: "GET",
             dataType: "json",
             dataSrc: ""
@@ -21,16 +21,12 @@ $(document).ready(function () {
         ],
         "columns": [
             { data: "name" },
-            { data: "manager" },
+            { data: "taskList" },
+            { data: "status" },
             { data: "description" },
             {
-                data: "createDate", render: function (data) {
-                    return moment(data).format('DD/MM/YYYY, h:mm a');
-                }
-            },
-            {
                 data: null, render: function (data, type, row) {
-                    return "<td><div class='btn-group'><button type='button'  title='Task List' id='BtnTask' data-original-title='TaskList' data-placement='top' data-toggle='tooltip' class='btn btn-primary'><i class='fa fa-tasks'></i></button><button type='button' class='btn btn-warning' id='BtnEdit' data-toggle='tooltip' data-placement='top' title='Edit' data-original-title='Edit' onclick=GetById('" + row.id + "');><i class='fa fa-pencil'></i></button> <button type='button' title='Delete' class='btn btn-danger' id='BtnDelete' data-toggle='tooltip' data-placement='top' data-original-title='Delete' onclick=Delete('" + row.id + "');><i class='fa fa-trash'></i></button></div></td>";
+                    return "<td><div class='btn-group'><button type='button'  title='Card' id='BtnCard' data-original-title='Card' data-placement='top' data-toggle='tooltip' class='btn btn-primary'><i class='fa fa-tasks'></i></button><button type='button' class='btn btn-warning' id='BtnEdit' data-toggle='tooltip' data-placement='top' title='Edit' data-original-title='Edit' onclick=GetById('" + row.id + "');><i class='fa fa-pencil'></i></button> <button type='button' title='Delete' class='btn btn-danger' id='BtnDelete' data-toggle='tooltip' data-placement='top' data-original-title='Delete' onclick=Delete('" + row.id + "');><i class='fa fa-trash'></i></button></div></td>";
                 }
             },
         ]
@@ -43,33 +39,33 @@ $(document).ready(function () {
     });
 
     //load table manager
-    LoadUser($('#UserOption'));
+    LoadTaskList($('#TaskOption'));
 });
 /*--------------------------------------------------------------------------------------------------*/
 // Selectlist
-function LoadUser(element) {
-    if (User.length === 0) {
+function LoadTaskList(element) {
+    if (TaskList.length === 0) {
         $.ajax({
             type: "Get",
-            url: "/User/LoadUser",
+            url: "/TaskList/LoadTaskList2",
             success: function (data) {
-                User = data.data;
-                renderUser(element);
+                TaskList = data.data;
+                renderTaskList(element);
             }
         });
     }
     else {
-        renderUser(element);
+        renderTaskList(element);
     }
 }
 
 // Memasukan Loaduser ke dropdown
-function renderUser(element) {
+function renderTaskList(element) {
     var $option = $(element);
     $option.empty();
-    $option.append($('<option/>').val('0').text('Select User').hide());
-    $.each(User, function (i, val) {
-        $option.append($('<option/>').val(val.id).text(val.fullName));
+    $option.append($('<option/>').val('0').text('Select TaskList').hide());
+    $.each(TaskList, function (i, val) {
+        $option.append($('<option/>').val(val.id).text(val.name));
     });
 }
 /*--------------------------------------------------------------------------------------------------*/
@@ -78,7 +74,7 @@ document.getElementById("BtnAdd").addEventListener("click", function () {
     ClearScreen();
     $('#SaveBtn').show();
     $('#UpdateBtn').hide();
-    LoadUser($('#UserOption'));
+    LoadTaskList($('#TaskOption'));
 });
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -86,16 +82,17 @@ document.getElementById("BtnAdd").addEventListener("click", function () {
 function ClearScreen() {
     $('#Id').val('');
     $('#Name').val('');
+    $('#Status').val('');
     $('#Description').val('');
-    $('#UserOption').val('');
-    LoadUser($('#UserOption'));
+    $('#TaskOption').val('');
+    LoadTaskList($('#TaskOption'));
 }
 /*--------------------------------------------------------------------------------------------------*/
 //get id to edit
 function GetById(Id) {
     debugger;
     $.ajax({
-        url: "/Project/GetById/" + Id,
+        url: "/Card/GetById/" + Id,
         type: "GET",
         contentType: "application/json;charset=utf-8",
         dataType: "json",
@@ -104,7 +101,8 @@ function GetById(Id) {
             debugger;
             $('#Id').val(result.id);
             $('#Name').val(result.name);
-            //    $('#UserOption').val(result.manager_Id);
+            $('#TaskOption').val(result.taskList_Id);
+            $('#Status').val(result.status);
             $('#Description').val(result.description);
             $('#myModal').modal('show');
             $('#UpdateBtn').show();
@@ -118,23 +116,24 @@ function GetById(Id) {
 
 //function save
 function Save() {
-    var Project = new Object();
-    Project.Name = $('#Name').val();
-    //  Project.Manager_Id = $('#UserOption').val();
-    Project.Description = $('#Description').val();
+    var Card = new Object();
+    Card.Name = $('#Name').val();
+    Card.TaskList_Id = $('#TaskOption').val();
+    Card.Status = $('#Status').val();
+    Card.Description = $('#Description').val();
     $.ajax({
         type: 'POST',
-        url: '/Project/InsertOrUpdate',
-        data: Project
+        url: '/Card/InsertOrUpdate',
+        data: Card
     }).then((result) => {
         if (result.statusCode === 200) {
             Swal.fire({
                 icon: 'success',
                 potition: 'center',
-                title: 'Project Add Successfully',
+                title: 'Card Add Successfully',
                 timer: 2500
             }).then(function () {
-                $('#Project').DataTable().ajax.reload();
+                $('#Card').DataTable().ajax.reload();
                 $('#myModal').modal('hide');
                 ClearScreen();
             });
@@ -148,24 +147,25 @@ function Save() {
 //function edit
 function Edit() {
     debugger;
-    var Project = new Object();
-    Project.Id = $('#Id').val();
-    Project.Name = $('#Name').val();
-    // Project.Manager_Id = $('#UserOption').val();
-    Project.Description = $('#Description').val();
+    var Card = new Object();
+    Card.Id = $('#Id').val();
+    Card.Name = $('#Name').val();
+    Card.TaskList_Id = $('#TaskOption').val();
+    Card.Description = $('#Description').val();
+    Card.Status = $('#Status').val();
     $.ajax({
         type: 'POST',
-        url: '/Project/InsertOrUpdate',
-        data: Project
+        url: '/Card/InsertOrUpdate',
+        data: Card
     }).then((result) => {
         if (result.statusCode === 200) {
             Swal.fire({
                 icon: 'success',
                 potition: 'center',
-                title: 'Project Updated Successfully',
+                title: 'Card Updated Successfully',
                 timer: 2500
             }).then(function () {
-                $('#Project').DataTable().ajax.reload();
+                $('#Card').DataTable().ajax.reload();
                 $('#myModal').modal('hide');
                 ClearScreen();
             });
@@ -190,7 +190,7 @@ function Delete(Id) {
         if (result.value) {
             //debugger;
             $.ajax({
-                url: "/Project/Delete/",
+                url: "/Card/Delete/",
                 data: { Id: Id }
             }).then((result) => {
                 debugger;
@@ -201,7 +201,7 @@ function Delete(Id) {
                         title: 'Delete Successfully',
                         timer: 2000
                     }).then(function () {
-                        $('#Project').DataTable().ajax.reload();
+                        $('#Card').DataTable().ajax.reload();
                         $('#myModal').modal('hide');
                         ClearScreen();
                     });
@@ -225,7 +225,7 @@ function Donut() {
     //debugger;
     $.ajax({
         type: 'GET',
-        url: '/Project/GetChart/',
+        url: '/Card/GetChart/',
         success: function (data) {
             //debugger;
             Morris.Donut({
@@ -247,7 +247,7 @@ function Donut() {
 function Bar() {
     $.ajax({
         type: 'GET',
-        url: '/Project/GetChart/',
+        url: '/Card/GetChart/',
         success: function (data) {
             Morris.Bar({
                 element: 'BarChart',

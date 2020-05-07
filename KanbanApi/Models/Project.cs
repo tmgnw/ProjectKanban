@@ -1,4 +1,5 @@
 ﻿using KanbanApi.Base;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -27,5 +28,11 @@ namespace KanbanApi.Models
         public virtual ICollection<TaskList> TaskLists { get; set; }
 
 
+    }
+
+    public class ProjectJson
+    {
+        [JsonProperty("data")]
+        public IList<Project> data { get; set; }
     }
 }

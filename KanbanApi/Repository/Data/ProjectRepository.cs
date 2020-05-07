@@ -33,7 +33,7 @@ namespace KanbanApi.Repository.Data
             }
         }
 
-  /*      // REPO GET BY ID WITH DAPPER
+        // REPO GET BY ID WITH DAPPER
         public async Task<IEnumerable<ProjectVM>> GetByIdProject(int id)
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
@@ -43,7 +43,7 @@ namespace KanbanApi.Repository.Data
                 var data = await connection.QueryAsync<ProjectVM>(procName, parameters, commandType: CommandType.StoredProcedure);
                 return data;
             }
-        } */
+        } 
 
         public int Insert(ProjectVM projectVM)
         {
@@ -79,6 +79,16 @@ namespace KanbanApi.Repository.Data
                 var procName = "SP_Delete_TB_M_Project";
                 parameters.Add("@Id", id);
                 var data = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
+                return data;
+            }
+        }
+
+        public async Task<IEnumerable<ChartVM>> GetChart()
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
+            {
+                var spName = "SP_GetChart";
+                var data = await connection.QueryAsync<ChartVM>(spName, commandType: CommandType.StoredProcedure);
                 return data;
             }
         }

@@ -12,33 +12,44 @@ namespace KanbanApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TaskListController : ControllerBase
+    public class TaskListController : BasesController<TaskList, TaskListRepository>
     {
         private readonly TaskListRepository _repository;
 
-        public TaskListController(TaskListRepository repository)
+        public TaskListController(TaskListRepository repository) : base(repository)
         {
             this._repository = repository;
         }
 
+        // API GET ALL WITH DAPPER
         [HttpGet]
-        public async Task<IEnumerable<TaskListVM>> GetAll()
+        [Route("GetAll/{Id}")]
+        public async Task<IEnumerable<TaskListVM>> GetAll(string Id)
         {
-            return await _repository.GetAllStatusList();
+            return await _repository.GetAllTaskList(Id);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IEnumerable<TaskListVM>> GetById(int id)
+        // API POST WITH DAPPER
+        [HttpPost("Insert")]
+        public IActionResult Insert(TaskListVM taskListVM)
         {
-            return await _repository.GetByIdStatusList(id);
-        }
-
-        [HttpPost]
-        public IActionResult Insert(TaskListVM statusListVM)
-        {
-            _repository.Insert(statusListVM);
+            _repository.Insert(taskListVM);
             return Ok("Insert Succesfully");
         }
+
+        [HttpGet]
+        [Route("ChartInfo")]
+        public async Task<IEnumerable<ChartVM>> Chart()
+        {
+            return await _repository.GetChart();
+        }
+
+        /*    [HttpGet("{id}")]
+            public async Task<IEnumerable<TaskListVM>> GetById(int id)
+            {
+                return await _repository.GetByIdStatusList(id);
+            }
+            
 
         [HttpPut("{id}")]
         public IActionResult Put(int id, TaskListVM statusListVM)
@@ -53,5 +64,7 @@ namespace KanbanApi.Controllers
             _repository.Remove(id);
             return Ok("Deleted Succesfully");
         }
+
+    */
     }
 }
