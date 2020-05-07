@@ -147,17 +147,17 @@ D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netco
 D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.dll
 D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
 D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
-D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
-D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
-D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.dll
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.Development.json
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.json
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.deps.json
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.json
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.dev.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.dll
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.pdb
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
 D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache

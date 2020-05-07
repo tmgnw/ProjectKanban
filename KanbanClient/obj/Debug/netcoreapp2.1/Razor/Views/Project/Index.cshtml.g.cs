@@ -154,7 +154,7 @@ using KanbanClient.Models;
                     ");
             EndContext();
             BeginContext(3598, 1051, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "584cbe17c03f43ce841499711fabd4a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97840c094088488597f6c233c6c05a01", async() => {
                 BeginContext(3604, 747, true);
                 WriteLiteral(@"
                         <div class=""form-group"" hidden>
@@ -212,7 +212,7 @@ using KanbanClient.Models;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(5157, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "483fd25ea6884fd79813cf72242f92fd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97fe7a46fb6747b8ab0a805fc7f335b0", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

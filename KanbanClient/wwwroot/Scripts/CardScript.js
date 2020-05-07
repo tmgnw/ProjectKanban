@@ -2,8 +2,8 @@
 var TaskList = [];
 $(document).ready(function () {
     //load digram
-    //Donut();
-    //Bar();
+    Donut();
+    Bar();
     $('#Card').dataTable({
         "ajax": {
             url: "/Card/LoadCard",

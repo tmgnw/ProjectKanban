@@ -119,27 +119,30 @@
                     <ul id="sidebarnav">
                         @*@Html.Partial("_LoginPartial")*@
                         <li class="nav-small-cap">DASHBOARD</li>
+                        <li>@Html.ActionLink("Project Board", "Index", "Project")</li>
+                        <li>@Html.ActionLink("TaskList Board", "Index", "TaskList")</li>
+                        <li>@Html.ActionLink("Card Board", "Index", "Card")</li>
 
                         @*<li>@Html.ActionLink("Department", "Index", "Department")</li>
-                        <li>@Html.ActionLink("Employee", "Index", "Employee")</li>*@
+        <li>@Html.ActionLink("Employee", "Index", "Employee")</li>*@
 
                         @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
 
                         @*@if (User.IsInRole("Employee"))
-                            {
+        {
 
-                                <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
-                            }
+            <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
+        }
 
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <li>@Html.ActionLink("TodoList", "Index", "TodoLists")</li>
-                                <li>@Html.ActionLink("Role", "Index", "Role")</li>
-                                <li>@Html.ActionLink("Supplier", "Index", "Supplier")</li>
-                                <li>@Html.ActionLink("Register", "Register2", "User", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                            }*@
+        @if (User.IsInRole("Admin"))
+        {
+            <li>@Html.ActionLink("TodoList", "Index", "TodoLists")</li>
+            <li>@Html.ActionLink("Role", "Index", "Role")</li>
+            <li>@Html.ActionLink("Supplier", "Index", "Supplier")</li>
+            <li>@Html.ActionLink("Register", "Register2", "User", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        }*@
                     </ul>
                 </nav>
             </div>

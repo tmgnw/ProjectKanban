@@ -22,13 +22,13 @@ namespace KanbanApi.Repository.Data
             _configuration = configuration;
         }
 
-        public async Task<IEnumerable<TaskListVM>> GetAllTaskList(string Id)
+        public async Task<IEnumerable<TaskListVM>> GetAllTaskList()
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
-                parameters.Add("@Id", Id);
+               // parameters.Add("@Id", Id);
                 var procName = "SP_Retrieve_TB_T_Task_List";
-                var data = await connection.QueryAsync<TaskListVM>(procName,parameters, commandType: CommandType.StoredProcedure);
+                var data = await connection.QueryAsync<TaskListVM>(procName, commandType: CommandType.StoredProcedure);
                 return data;
             }
         }
@@ -87,7 +87,7 @@ namespace KanbanApi.Repository.Data
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
-                var spName = "SP_GetChart";
+                var spName = "SP_GetChart_TB_T_Task_List";
                 var data = await connection.QueryAsync<ChartVM>(spName, commandType: CommandType.StoredProcedure);
                 return data;
             }

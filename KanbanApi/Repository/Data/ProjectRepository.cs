@@ -87,7 +87,7 @@ namespace KanbanApi.Repository.Data
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
-                var spName = "SP_GetChart";
+                var spName = "SP_GetChart_TB_M_Project";
                 var data = await connection.QueryAsync<ChartVM>(spName, commandType: CommandType.StoredProcedure);
                 return data;
             }

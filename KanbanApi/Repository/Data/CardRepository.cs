@@ -22,13 +22,13 @@ namespace KanbanApi.Repository.Data
             _configuration = configuration;
         }
 
-        public async Task<IEnumerable<CardVM>> GetAllCard(string Id)
+        public async Task<IEnumerable<CardVM>> GetAllCard()
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
-                parameters.Add("@Id", Id);
+           //     parameters.Add("@Id", Id);
                 var procName = "SP_Retrieve_TB_T_Card";
-                var data = await connection.QueryAsync<CardVM>(procName, parameters,commandType: CommandType.StoredProcedure);
+                var data = await connection.QueryAsync<CardVM>(procName,commandType: CommandType.StoredProcedure);
                 return data;
             }
         }
@@ -88,7 +88,7 @@ namespace KanbanApi.Repository.Data
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("MyNetCoreConnection")))
             {
-                var spName = "SP_GetChart";
+                var spName = "SP_GetChart_TB_T_Card";
                 var data = await connection.QueryAsync<ChartVM>(spName, commandType: CommandType.StoredProcedure);
                 return data;
             }
