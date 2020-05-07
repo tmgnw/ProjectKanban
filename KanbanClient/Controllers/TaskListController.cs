@@ -14,10 +14,10 @@ namespace KanbanClient.Controllers
 {
     public class TaskListController : Controller
     {
-        readonly HttpClient client = new HttpClient
-        {
-            BaseAddress = new Uri("https://localhost:44320/api/")
-        };
+        //readonly HttpClient client = new HttpClient
+        //{
+        //    BaseAddress = new Uri("https://localhost:44320/api/")
+        //};
         public IActionResult Index()
         {
             return View();
