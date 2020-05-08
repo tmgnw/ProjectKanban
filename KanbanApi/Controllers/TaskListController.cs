@@ -6,10 +6,12 @@ using KanbanApi.Base;
 using KanbanApi.Models;
 using KanbanApi.Repository.Data;
 using KanbanApi.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace KanbanApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/[controller]")]
     [ApiController]
     public class TaskListController : BasesController<TaskList, TaskListRepository>
@@ -23,10 +25,10 @@ namespace KanbanApi.Controllers
 
         // API GET ALL WITH DAPPER
         [HttpGet]
-        [Route("GetAll/{Id}")]
-        public async Task<IEnumerable<TaskListVM>> GetAll(string Id)
+        [Route("GetAll/")]
+        public async Task<IEnumerable<TaskListVM>> GetAll()
         {
-            return await _repository.GetAllTaskList(Id);
+            return await _repository.GetAllTaskList();
         }
 
         // API POST WITH DAPPER

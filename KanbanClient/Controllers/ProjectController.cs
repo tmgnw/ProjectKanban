@@ -64,7 +64,7 @@ namespace KanbanClient.Controllers
                 BaseAddress = new Uri("https://localhost:44320/api/")
             };
             client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
-         
+
             ProjectJson project = null;
             var responseTask = client.GetAsync("Project/");
             responseTask.Wait();
@@ -90,6 +90,7 @@ namespace KanbanClient.Controllers
             };
             client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
             projectVM.Manager_Id = HttpContext.Session.GetString("Id");
+            
             var myContent = JsonConvert.SerializeObject(projectVM);
             var buffer = System.Text.Encoding.UTF8.GetBytes(myContent);
             var byteContent = new ByteArrayContent(buffer);
@@ -149,6 +150,7 @@ namespace KanbanClient.Controllers
                 BaseAddress = new Uri("https://localhost:44320/api/")
             };
             client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            
             IEnumerable<ChartVM> chartInfo = null;
             List<ChartVM> chartData = new List<ChartVM>();
             var responseTask = client.GetAsync("Project/ChartInfo"); //Access data from employees API

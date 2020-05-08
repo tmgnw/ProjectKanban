@@ -14,10 +14,10 @@ namespace KanbanClient.Controllers
 {
     public class TaskListController : Controller
     {
-        readonly HttpClient client = new HttpClient
-        {
-            BaseAddress = new Uri("https://localhost:44320/api/")
-        };
+        //readonly HttpClient client = new HttpClient
+        //{
+        //    BaseAddress = new Uri("https://localhost:44320/api/")
+        //};
         public IActionResult Index()
         {
             return View();
@@ -25,16 +25,14 @@ namespace KanbanClient.Controllers
 
         public JsonResult LoadTaskList()
         {
-            //var client = new HttpClient
-            //{
-            //    BaseAddress = new Uri("https://localhost:44320/api/")
-            //};
-            int hehe = 12;
-            string Id = hehe.ToString(); ; //HttpContext.Session.GetString("Id");
-        //    client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            var client = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:44320/api/")
+            };
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
 
             IEnumerable<TaskListVM> tasklist = null;
-            var responseTask = client.GetAsync("TaskList/GetAll/" + Id);
+            var responseTask = client.GetAsync("TaskList/GetAll/");
             responseTask.Wait();
             var result = responseTask.Result;
             if (result.IsSuccessStatusCode)
@@ -56,7 +54,7 @@ namespace KanbanClient.Controllers
             {
                 BaseAddress = new Uri("https://localhost:44320/api/")
             };
-           client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
 
             TaskListJson tasklist = null;
             var responseTask = client.GetAsync("TaskList/");
@@ -77,11 +75,11 @@ namespace KanbanClient.Controllers
 
         public JsonResult InsertOrUpdate(TaskListVM tasklistVM)
         {
-            //var client = new HttpClient
-            //{
-            //    BaseAddress = new Uri("https://localhost:44320/api/")
-            //};
-            //client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            var client = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:44320/api/")
+            };
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
             //tasklistVM.Project_Id = HttpContext.Session.GetString("Id");
             var myContent = JsonConvert.SerializeObject(tasklistVM);
             var buffer = System.Text.Encoding.UTF8.GetBytes(myContent);
@@ -101,11 +99,11 @@ namespace KanbanClient.Controllers
 
         public JsonResult GetById(int Id)
         {
-            //var client = new HttpClient
-            //{
-            //    BaseAddress = new Uri("https://localhost:44320/api/")
-            //};
-            //client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            var client = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:44320/api/")
+            };
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
 
             TaskList tasklist = null;
             var responseTask = client.GetAsync("TaskList/" + Id);
@@ -125,14 +123,45 @@ namespace KanbanClient.Controllers
 
         public JsonResult Delete(int Id)
         {
-            //var client = new HttpClient
-            //{
-            //    BaseAddress = new Uri("https://localhost:44320/api/")
-            //};
-            //client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            var client = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:44320/api/")
+            };
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
 
             var result = client.DeleteAsync("TaskList/" + Id).Result;
             return Json(result);
+        }
+
+        public JsonResult GetChart()
+        {
+            var client = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:44320/api/")
+            };
+            client.DefaultRequestHeaders.Add("Authorization", HttpContext.Session.GetString(("JWToken")));
+            
+            IEnumerable<ChartVM> chartInfo = null;
+            List<ChartVM> chartData = new List<ChartVM>();
+            var responseTask = client.GetAsync("TaskList/ChartInfo"); //Access data from employees API
+            responseTask.Wait(); //Waits for the Task to complete execution.
+            var result = responseTask.Result;
+            if (result.IsSuccessStatusCode) // if access success
+            {
+                var readTask = result.Content.ReadAsAsync<IList<ChartVM>>(); //Get all the data from the API
+                readTask.Wait();
+                chartInfo = readTask.Result;
+                foreach (var item in chartInfo)
+                {
+                    ChartVM data = new ChartVM();
+                    data.label = item.label;
+                    data.value = item.value;
+                    chartData.Add(data);
+                }
+                var json = JsonConvert.SerializeObject(chartData, Formatting.Indented);
+                return Json(json);
+            }
+            return Json("internal server error");
         }
     }
 }

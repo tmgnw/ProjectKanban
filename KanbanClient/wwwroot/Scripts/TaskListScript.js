@@ -2,8 +2,8 @@
 var Project = [];
 $(document).ready(function () {
     //load digram
- //   Donut();
-  //  Bar();
+    Donut();
+    Bar();
     $('#TaskList').dataTable({
         "ajax": {
             url: "/TaskList/LoadTaskList",

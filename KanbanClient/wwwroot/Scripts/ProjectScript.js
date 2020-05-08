@@ -30,7 +30,7 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<td><div class='btn-group'><button type='button'  title='Task List' id='BtnTask' data-original-title='TaskList' data-placement='top' data-toggle='tooltip' class='btn btn-primary'><i class='fa fa-tasks'></i></button><button type='button' class='btn btn-warning' id='BtnEdit' data-toggle='tooltip' data-placement='top' title='Edit' data-original-title='Edit' onclick=GetById('" + row.id + "');><i class='fa fa-pencil'></i></button> <button type='button' title='Delete' class='btn btn-danger' id='BtnDelete' data-toggle='tooltip' data-placement='top' data-original-title='Delete' onclick=Delete('" + row.id + "');><i class='fa fa-trash'></i></button></div></td>";
+                    return "<td><div class='btn-group'><button type='button'  title='Task List' onclick=ViewTask('" + row.id + "'); id='BtnTask' data-original-title='TaskList' data-placement='top' data-toggle='tooltip' class='btn btn-primary'><i class='fa fa-tasks'></i></button><button type='button' class='btn btn-warning' id='BtnEdit' data-toggle='tooltip' data-placement='top' title='Edit' data-original-title='Edit' onclick=GetById('" + row.id + "');><i class='fa fa-pencil'></i></button> <button type='button' title='Delete' class='btn btn-danger' id='BtnDelete' data-toggle='tooltip' data-placement='top' data-original-title='Delete' onclick=Delete('" + row.id + "');><i class='fa fa-trash'></i></button></div></td>";
                 }
             },
         ]
@@ -61,6 +61,22 @@ function LoadUser(element) {
     else {
         renderUser(element);
     }
+}
+
+
+function ViewTask(Id) {
+    debugger;
+    var Project_Id = Id;
+    $.ajax({
+        // do the rest of work here
+        type: "POST",
+        data: { Project_Id: Project_Id },
+        url: '@Url.Action("Index", "TakList")',
+        async: true,
+        success: function (data) {
+            // do something
+        }
+    });
 }
 
 // Memasukan Loaduser ke dropdown
