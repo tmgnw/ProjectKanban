@@ -72,7 +72,7 @@
                                         <div class="dw-user-box">
                                             <div class="u-img"><img src="~/Mini AdminPro/assets/images/users/6.jpg" alt="user"></div>
                                             <div class="u-text">
-                                                <h4>Thomas Gunawan</h4>
+                                                <h4>Kanban Project</h4>
                                                 <p class="text-muted">tum@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                             </div>
                                         </div>
@@ -84,7 +84,7 @@
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="@Url.Action("Logout","Account")"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a href="@Url.Action("Logout","Auth")"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -104,13 +104,13 @@
                     <div class="profile-img"> <img src="~/Mini AdminPro/assets/images/users/6.jpg" alt="user" /> </div>
                     <!-- User profile text-->
                     <div class="profile-text">
-                        <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Thomas Gunawan <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Project Kanban<span class="caret"></span></a>
                         <div class="dropdown-menu animated flipInY">
                             <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
                             <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
                             <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
                             <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                            <div class="dropdown-divider"></div> <a href="@Url.Action("Logout","Account")" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                            <div class="dropdown-divider"></div> <a href="@Url.Action("Logout","Auth")" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                         </div>
                     </div>
                 </div>
@@ -119,27 +119,30 @@
                     <ul id="sidebarnav">
                         @*@Html.Partial("_LoginPartial")*@
                         <li class="nav-small-cap">DASHBOARD</li>
+                        <li>@Html.ActionLink("Project Board", "Index", "Project")</li>
+                        <li>@Html.ActionLink("TaskList Board", "Index", "TaskList")</li>
+                        <li>@Html.ActionLink("Card Board", "Index", "Card")</li>
 
                         @*<li>@Html.ActionLink("Department", "Index", "Department")</li>
-                        <li>@Html.ActionLink("Employee", "Index", "Employee")</li>*@
+        <li>@Html.ActionLink("Employee", "Index", "Employee")</li>*@
 
                         @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
 
                         @*@if (User.IsInRole("Employee"))
-                            {
+        {
 
-                                <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
-                            }
+            <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
+        }
 
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <li>@Html.ActionLink("TodoList", "Index", "TodoLists")</li>
-                                <li>@Html.ActionLink("Role", "Index", "Role")</li>
-                                <li>@Html.ActionLink("Supplier", "Index", "Supplier")</li>
-                                <li>@Html.ActionLink("Register", "Register2", "User", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                            }*@
+        @if (User.IsInRole("Admin"))
+        {
+            <li>@Html.ActionLink("TodoList", "Index", "TodoLists")</li>
+            <li>@Html.ActionLink("Role", "Index", "Role")</li>
+            <li>@Html.ActionLink("Supplier", "Index", "Supplier")</li>
+            <li>@Html.ActionLink("Register", "Register2", "User", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        }*@
                     </ul>
                 </nav>
             </div>
@@ -148,7 +151,7 @@
                         <button class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></button>
                     </form>*@
                 <a></a>
-                <a href="@Url.Action("Logout","Account")" title="Logout"><i class="mdi mdi-power"></i></a>
+                <a href="@Url.Action("Logout","Auth")" title="Logout"><i class="mdi mdi-power"></i></a>
                 <a></a>
             </div>
         </aside>

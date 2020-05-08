@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layouts/Layout.cshtml";
+}
+
+<h2>Index</h2>
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-6 col-8 align-self-center">
+            <h3 class="text-themecolor m-b-0 m-t-0">Board TaskList</h3>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                <li class="breadcrumb-item active">Board TaskList</li>
+            </ol>
+        </div>
+    </div>
+    @*chart*@
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Project Chart</h4>
+                <div id="TaskListChart"></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">TaskList Donut Chart</h4>
+                                <div id="DonutChart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">TaskList Bar Chart</h4>
+                                <div id="BarChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* star card *@
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h2>Project</h2>
+                        </div>
+                        <div>
+                            <button class="btn pull-right hidden-sm-down btn-success" id="BtnAdd" data-toggle="modal" data-target="#myModal"><i class="mdi mdi-plus-circle"></i> Add Project</button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive m-t-40">
+                        <table id="TaskList" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Create Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal content-->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add TaskList</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form>
+                        <div class="form-group" hidden>
+                            <label>Id:</label>
+                            <input type="text" class="form-control" id="Id" name="Id">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Name">Name :</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Status">Status :</label>
+                            <input type="text" class="form-control" id="Status" placeholder="Status">
+                        </div>
+
+                        <div class="form-group">
+                                <label for="ProjectOption">Project :</label>
+                                <select class="form-control" id="ProjectOption" name="ProjectOption"></select>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="UpdateBtn" type="button" onclick="Edit()" class="btn btn-success">Update</button>
+                    <button id="SaveBtn" type="button" onclick="Save()" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @section Scripts{
+        <script src="~/Scripts/TaskListScript.js"></script>
+    }
+

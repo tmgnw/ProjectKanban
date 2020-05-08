@@ -1,4 +1,5 @@
 ﻿using KanbanApi.Base;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,8 +14,7 @@ namespace KanbanApi.Models
     {
         public User()
         {
-            this.Boards = new HashSet<Board>();
-            this.UserBoards = new HashSet<UserBoard>();
+            this.Projects = new List<Project>();
         }
 
         [Key]
@@ -23,7 +23,12 @@ namespace KanbanApi.Models
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public virtual ICollection<Board> Boards { get; set; }
-        public virtual ICollection<UserBoard> UserBoards { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
+    }
+
+    public class UserJson
+    {
+        [JsonProperty("data")]
+        public IList<User> data { get; set; }
     }
 }

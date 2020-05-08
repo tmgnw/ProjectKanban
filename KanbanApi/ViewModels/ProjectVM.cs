@@ -1,18 +1,20 @@
-﻿using System;
+﻿using KanbanApi.Models;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace KanbanApi.Models
+namespace KanbanApi.ViewModels
 {
-    [Table("TB_M_Team")]
-    public class Team
+    public class ProjectVM
     {
-        [Key]
         public int Id { get; set; }
+        public string Manager_Id { get; set; }
+
+        public string Manager { get; set; }
+
         public string Name { get; set; }
         public string Description { get; set; }
+
     }
 }

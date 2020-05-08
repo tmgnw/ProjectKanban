@@ -8,6 +8,7 @@ C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Kan
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
@@ -20,7 +21,6 @@ C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Raz
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Layouts\Layout.cshtml.g.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -34,7 +34,160 @@ C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Kan
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
 C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.dll
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.pdb
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
-C:\Users\Thomas\Documents\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Board\Index.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.deps.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.dev.json
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfoInputs.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfo.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.input.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.output.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorCoreGenerate.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cs
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
+D:\Documents\Source-Code\new\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.deps.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.dev.json
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfoInputs.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfo.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.input.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.output.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorCoreGenerate.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cs
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
+D:\Documents\Source-Code\malam\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.deps.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.dev.json
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfoInputs.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfo.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.input.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.output.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorCoreGenerate.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Login.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Register.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Layouts\Layout.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Project\Index.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cache
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cs
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\update siang\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.deps.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.runtimeconfig.dev.json
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.dll
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.dll
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\bin\Debug\netcoreapp2.1\KanbanApi.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csprojAssemblyReference.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CoreCompileInputs.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorAssemblyInfo.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfoInputs.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.AssemblyInfo.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.input.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.TagHelpers.output.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorCoreGenerate.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Login.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Register.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Card\Index.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Layouts\Layout.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Project\Index.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\TaskList\Index.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cache
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.RazorTargetAssemblyInfo.cs
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.Views.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.csproj.CopyComplete
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.dll
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.pdb
+D:\Documents\Source-Code\ProjectKanban\KanbanClient\obj\Debug\netcoreapp2.1\KanbanClient.genruntimeconfig.cache

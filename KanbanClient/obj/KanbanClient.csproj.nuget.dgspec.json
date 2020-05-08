@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
+    "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
+    "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
         "projectName": "KanbanApi",
-        "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
+        "projectPath": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\KanbanApi.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,18 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "BCrypt": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "BCrypt-Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.35, )"
@@ -48,10 +60,18 @@
               "version": "[2.1.1, )",
               "autoReferenced": true
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -59,9 +79,17 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "Microsoft.Owin.Security.Jwt": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.10, )"
+            },
+            "System.Security.Cryptography.Algorithms": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -78,14 +106,14 @@
         }
       }
     },
-    "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
+    "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanClient\\KanbanClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
         "projectName": "KanbanClient",
-        "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
+        "projectPath": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanClient\\KanbanClient.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanClient\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,8 +129,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
-                "projectPath": "C:\\Users\\Thomas\\Documents\\ProjectKanban\\KanbanApi\\KanbanApi.csproj"
+              "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\KanbanApi.csproj": {
+                "projectPath": "C:\\Users\\Thomas\\Pictures\\ProjectKanban\\KanbanApi\\KanbanApi.csproj"
               }
             }
           }
@@ -136,6 +164,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

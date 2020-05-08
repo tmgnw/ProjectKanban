@@ -1,5 +1,5 @@
 ﻿using KanbanApi.Base;
-using KanbanApi.MyContext;
+using KanbanApi.Context;
 using KanbanApi.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,14 +11,15 @@ namespace KanbanApi.Repository
 {
     public class GeneralRepository<TEntity, TContext> : IRepository<TEntity>
         where TEntity : class, IEntity
-        where TContext : myContext
+        where TContext : MyContext
+
     {
-        private readonly myContext _myContext;
+        private readonly MyContext _myContext;
 
         //Constructor
-        public GeneralRepository(myContext myContexts)
+        public GeneralRepository(MyContext myContext)
         {
-            this._myContext = myContexts;
+            this._myContext = myContext;
         }
 
         //REPO GET ALL
@@ -37,8 +38,6 @@ namespace KanbanApi.Repository
         //REPO POST
         public async Task<TEntity> Post(TEntity entity)
         {
-            //entity.CreateDate = DateTimeOffset.Now;
-            //entity.IsDelete = false;
             await _myContext.Set<TEntity>().AddAsync(entity);
             await _myContext.SaveChangesAsync();
             return entity;
@@ -53,6 +52,7 @@ namespace KanbanApi.Repository
             return entity;
         }
 
+        //REPO DELETE
         public async Task<TEntity> Delete(int id)
         {
             var entity = await Get(id);
@@ -60,11 +60,14 @@ namespace KanbanApi.Repository
             {
                 return entity;
             }
-            //entity.DeleteDate = DateTimeOffset.Now;
-            //entity.IsDelete = true;
-            _myContext.Entry(entity).State = EntityState.Modified;
+            _myContext.Entry(entity).State = EntityState.Deleted;
             await _myContext.SaveChangesAsync();
             return entity;
         }
+
+
     }
+
+
+
 }

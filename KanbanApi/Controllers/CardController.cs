@@ -6,54 +6,69 @@ using KanbanApi.Base;
 using KanbanApi.Models;
 using KanbanApi.Repository.Data;
 using KanbanApi.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KanbanApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/[controller]")]
     [ApiController]
-    public class CardController : ControllerBase
+    public class CardController : BasesController<Card, CardRepository>
     {
-        private readonly CardRepository _repository;
+      private readonly CardRepository _repository;
 
-        public CardController(CardRepository repository) 
+        public CardController(CardRepository repository) : base(repository)
         {
             this._repository = repository;
-
         }
 
+        // API GET ALL WITH DAPPER
         [HttpGet]
+        [Route("GetAll/")]
         public async Task<IEnumerable<CardVM>> GetAll()
         {
             return await _repository.GetAllCard();
         }
 
-        [HttpGet("{id}")]
-        public async Task<IEnumerable<CardVM>> GetById(int id)
-        {
-            return await _repository.GetByIdCard(id);
-        }
-
-        [HttpPost]
+        // API POST WITH DAPPER
+        [HttpPost("Insert")]
         public IActionResult Insert(CardVM cardVM)
         {
             _repository.Insert(cardVM);
             return Ok("Insert Succesfully");
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, CardVM cardVM)
+        [HttpGet]
+        [Route("ChartInfo")]
+        public async Task<IEnumerable<ChartVM>> Chart()
         {
-            _repository.Update(id, cardVM);
-            return Ok("Updated Succesfully");
+            return await _repository.GetChart();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            _repository.Remove(id);
-            return Ok("Deleted Succesfully");
-        }
+        /*    [HttpGet("{id}")]
+            public async Task<IEnumerable<CardVM>> GetById(int id)
+            {
+                return await _repository.GetByIdCard(id);
+            }
+            */
+
+        /*     [HttpPut("{id}")]
+             public IActionResult Put(int id, CardVM cardVM)
+             {
+                 _repository.Update(id, cardVM);
+                 return Ok("Updated Succesfully");
+             }
+
+             [HttpDelete("{id}")]
+             public IActionResult Delete(int id)
+             {
+                 _repository.Remove(id);
+                 return Ok("Deleted Succesfully");
+             }
+
+         */
+
     }
 }
